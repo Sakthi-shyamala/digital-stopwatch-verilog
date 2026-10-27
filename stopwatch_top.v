@@ -10,9 +10,7 @@ module stopwatch_top(
 
 wire count_enable;
 
-//--------------------------------------------------
-// FSM Instance
-//--------------------------------------------------
+
 stopwatch_fsm FSM (
 
     .clk(clk),
@@ -23,9 +21,6 @@ stopwatch_fsm FSM (
 
 );
 
-//--------------------------------------------------
-// Counter Instance
-//--------------------------------------------------
 counter COUNTER (
 
     .clk(clk),
